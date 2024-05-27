@@ -1,0 +1,5 @@
+theme = tokyonight
+font-family = FiraCode Nerd Font Mono
+window-padding-x = 5
+macos-titlebar-tabs = "true"
+clipboard-paste-protection = "false"
