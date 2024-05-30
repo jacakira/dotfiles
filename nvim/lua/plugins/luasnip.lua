@@ -9,6 +9,11 @@ return {
     " Use Shift-Tab to jump backwards through snippets
     imap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
     smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '<S-Tab>'
-]])
+    ]])
   end,
+  opts = {
+    enable_autosnippets = true,
+    update_events = "TextChanged, TextChangedI",
+    store_selection_keys = "<Tab>",
+  },
 }
