@@ -95,6 +95,91 @@ return {
     { condition = line_begin }
   ),
 
+  -- THEOREM
+
+  s(
+    { trig = "thm", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{theorem}
+      <>
+      \end{theorem}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- LEMMA
+
+  s(
+    { trig = "lem", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{lemma}
+      <>
+      \end{lemma}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- PROPOSITION
+
+  s(
+    { trig = "prop", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{proposition}
+      <>
+      \end{proposition}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- COROLLARY
+
+  s(
+    { trig = "cor", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{corollary}
+      <>
+      \end{corollary}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- EXAMPLE
+
+  s(
+    { trig = "eg", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{example}
+      <>
+      \end{example}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
   -- ENUMERATE
   s(
     { trig = "enum", snippetType = "autosnippet" },
@@ -113,22 +198,7 @@ return {
     { condition = line_begin }
   ),
 
-  -- ENUMERATE
-  s(
-    { trig = "enn", snippetType = "autosnippet" },
-    fmta(
-      [[
-        \begin{enumerate}
-
-            \item <>
-
-        \end{enumerate}
-      ]],
-      {
-        i(0),
-      }
-    )
-  ),
+  -- ENUMERATE ADD ITEM
 
   -- INLINE MATH
   s(
