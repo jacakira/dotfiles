@@ -61,15 +61,15 @@ end
 
 return {
 
-  -- Start document
+  -- Start document (basic start)
 
   s(
-    { trig = "texstart", snippetType = "autosnippet" },
+    { trig = "bstart", snippetType = "autosnippet" },
     fmta(
       [[
         \documentclass[a4paper]{report}
 
-        \input{/Users/akira/Imperial/Year 2/lecturenotes/preamble/colour.tex}
+        \input{/Users/akira/Imperial/Year 2/lecturenotes/preamble/<>.tex}
 
         \title{<>}
 
@@ -84,6 +84,41 @@ return {
       ]],
       {
         i(1),
+        i(2),
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- Start document, more detail (detail start)
+  s(
+    { trig = "dstart", snippetType = "autosnippet" },
+    fmta(
+      [[
+        \documentclass[a4paper]{report}
+
+        \input{/Users/akira/Imperial/Year 2/lecturenotes/preamble/<>.tex}
+
+        \title{<>}
+
+        \begin{document}
+  
+        \maketitle
+        \tableofcontents
+        
+        \chapter{<>}
+        \section{<>}
+
+        <>
+
+        \end{document}
+      ]],
+      {
+        i(1),
+        i(2),
+        i(3),
+        i(4),
         i(0),
       }
     ),
