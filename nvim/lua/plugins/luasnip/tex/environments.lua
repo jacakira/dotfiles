@@ -60,13 +60,13 @@ end
 
 return {
 
-  -- GENERIC ENVIRONMENT
+  -- Generic environment
   s(
     { trig = "new", snippetType = "autosnippet", dscr = "Begin new environment." },
     fmta(
       [[
       \begin{<>}
-      <>
+        <>
       \end{<>}
       ]],
       {
@@ -78,14 +78,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- EQUATION*
+  -- equation*
 
   s(
     { trig = "eq", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{equation*}
-      <>
+        <>
       \end{equation*}
       ]],
       {
@@ -95,14 +95,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- THEOREM
+  -- theorem
 
   s(
     { trig = "thm", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{theorem}
-      <>
+        <>
       \end{theorem}
       ]],
       {
@@ -112,14 +112,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- LEMMA
+  -- lemma
 
   s(
     { trig = "lem", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{lemma}
-      <>
+       <>
       \end{lemma}
       ]],
       {
@@ -129,14 +129,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- PROPOSITION
+  -- proposition
 
   s(
     { trig = "prop", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{proposition}
-      <>
+       <>
       \end{proposition}
       ]],
       {
@@ -146,14 +146,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- COROLLARY
+  -- corollary
 
   s(
     { trig = "cor", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{corollary}
-      <>
+       <>
       \end{corollary}
       ]],
       {
@@ -163,14 +163,14 @@ return {
     { condition = line_begin }
   ),
 
-  -- EXAMPLE
+  -- example
 
   s(
     { trig = "eg", snippetType = "autosnippet" },
     fmta(
       [[
       \begin{example}
-      <>
+        <>
       \end{example}
       ]],
       {
@@ -180,7 +180,24 @@ return {
     { condition = line_begin }
   ),
 
-  -- ENUMERATE
+  -- proof
+
+  s(
+    { trig = "prf", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{proof}
+       <>
+      \end{proof}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
+  -- enumerate
   s(
     { trig = "enum", snippetType = "autosnippet" },
     fmta(
@@ -200,7 +217,7 @@ return {
 
   -- ENUMERATE ADD ITEM
 
-  -- INLINE MATH
+  -- inline math
   s(
     { trig = "([^%l])mm", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
     fmta("<>$<>$", {
@@ -211,13 +228,11 @@ return {
     })
   ),
 
-  -- INLINE MATH ON NEW LINE
+  -- inline math on new line
   s(
     { trig = "^mm", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
     fmta("$<>$", {
       i(1),
     })
   ),
-
-  -- DISPLAY MATH
 }
