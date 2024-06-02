@@ -197,6 +197,23 @@ return {
     { condition = line_begin }
   ),
 
+  -- definition
+
+  s(
+    { trig = "dfn", snippetType = "autosnippet" },
+    fmta(
+      [[
+      \begin{definition}
+       <>
+      \end{definition}
+      ]],
+      {
+        i(0),
+      }
+    ),
+    { condition = line_begin }
+  ),
+
   -- enumerate
   s(
     { trig = "enum", snippetType = "autosnippet" },
