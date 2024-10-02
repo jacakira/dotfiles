@@ -82,6 +82,20 @@ return {
     }),
     { condition = tex_utils.in_mathzone }
   ),
+  -- partial derivative
+s(
+    { trig = "([^%a])del", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("<>\\partial <>", {
+      f(function(_, snip)
+        return snip.captures[1]
+      end),
+      i(1),
+    }),
+    { condition = tex_utils.in_mathzone }
+  ),
+  --
 }
 
 --TODO find out how to make math work!
+
+
