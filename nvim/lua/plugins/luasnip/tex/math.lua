@@ -85,7 +85,7 @@ return {
   -- partial derivative
 s(
     { trig = "([^%a])del", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
-    fmta("<>\\partial <>", {
+    fmta("<>\\partial<>", {
       f(function(_, snip)
         return snip.captures[1]
       end),
