@@ -4,45 +4,38 @@ set selection-clipboard clipboard
 
 #colors
 
-#set default-bg "#151729"
-#set statusbar-bg "#151729"
+set recolor true
+set recolor-keephue true
 
-#set recolor true
-#set recolor-darkcolor "#c8def5"
-#set recolor-lightcolor "#232435"
+set default-bg                  "#232136"
+set default-fg                  "#e0def4"
 
-#map <C-d> exec "recolor !"
-map <C-d> recolor
+set statusbar-fg                "#e0def4"
+set statusbar-bg                "#59546d"
 
-set default-bg                  "#faf4ed"
-set default-fg                  "#575279"
+set inputbar-bg                 "#817c9c"
+set inputbar-fg                 "#232136"
 
-set statusbar-fg                "#9893a5"
-set statusbar-bg                "#fffaf3"
+set notification-bg             "#817c9c"
+set notification-fg             "#232136"
 
-set inputbar-bg                 "#6e6a86"
-set inputbar-fg                 "#faf4ed"
+set notification-error-bg       "#817c9c"
+set notification-error-fg       "#ea9a97"
 
-set notification-bg             "#6e6a86"
-set notification-fg             "#faf4ed"
+set notification-warning-bg     "#817c9c"
+set notification-warning-fg     "#f6c177"
 
-set notification-error-bg       "#6e6a86"
-set notification-error-fg       "#ea9d34"
+set highlight-color             "#3e8fb0"
+set highlight-active-color      "#9ccfd8"
 
-set notification-warning-bg     "#6e6a86"
-set notification-warning-fg     "#ea9d34"
+set completion-bg               "#817c9c"
+set completion-fg               "#9ccfd8"
 
-set highlight-color             "#b4637a"
-set highlight-active-color      "#d7827e"
+set completion-highlight-fg     "#e0def4"
+set completion-highlight-bg     "#9ccfd8"
 
-set completion-bg               "#6e6a86"
-set completion-fg               "#d7827e"
-
-set completion-highlight-fg     "#575279"
-set completion-highlight-bg     "#d7827e"
-
-set recolor-lightcolor          "#faf4ed"
-set recolor-darkcolor           "#575279"
+set recolor-lightcolor          "#232136"
+set recolor-darkcolor           "#e0def4"
 
 set recolor                     "false"
 set recolor-keephue             "false"
