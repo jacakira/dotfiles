@@ -19,9 +19,16 @@ return {
       },
     },
   },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   { "shaunsingh/solarized.nvim" },
   { "catppuccin/nvim" },
   { "NLKNguyen/papercolor-theme" },
+  { "EdenEast/nightfox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
